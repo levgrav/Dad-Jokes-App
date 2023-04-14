@@ -93,7 +93,15 @@ def set_layout(layout: str):
     global window # sets the scope of the variable "window" to global, so that we can access the predefined variable.
     window = Window(title = layout, layout = layout_from_json(layout), size=(SW, SH), no_titlebar=True) # creates a window
 
-
+# --- Custom Elements --- #
+class Auto_Size_Image(Image):
+    def __init__(self, filename, small_file, cuttoff_px_y = 0, cuttoff_px_x = 0, **kwargs):
+        if SW < cuttoff_px_x or SH < cuttoff_px_y:
+            filename = small_file 
+            
+        super().__init__(filename=filename, **kwargs)
+        
+# --- Main --- #
 def main():
     """Main function. Contains some setup and the main game loop."""
     global joke

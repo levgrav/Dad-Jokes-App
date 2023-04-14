@@ -14,9 +14,12 @@
         ],
         [
             {
-                "instanceof": "Image",
+                "instanceof": "Auto_Size_Image",
                 "attrs": {
                     "filename": "data/image.png",
+                    "small_file": "data/image_50.png",
+                    "cuttoff_px_y": 900,
+                    "cuttoff_px_x": 900, 
                     "pad": [0, 20],
                     "key": "-IMAGE-",
                     "expand_x": true,
