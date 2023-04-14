@@ -1,0 +1,75 @@
+{
+    "Main Menu": [
+        [
+            {
+                "instanceof": "Text",
+                "attrs": {
+                    "text": "Dad-Joke Generator",
+                    "font": ["JetBrains Mono", 80],
+                    "justification": "center",
+                    "key": "-TITLE-",
+                    "expand_x": true
+                }
+            }
+        ],
+        [
+            {
+                "instanceof": "Image",
+                "attrs": {
+                    "filename": "data/image.png",
+                    "pad": [0, 20],
+                    "key": "-IMAGE-",
+                    "expand_x": true,
+                    "expand_y": true
+                }
+            }
+        ],
+        [
+            {
+                "instanceof": "Button",
+                "attrs": {
+                    "button_text": "Start",
+                    "size": [15, 2],
+                    "font": ["JetBrains Mono", 30],
+                    "expand_x": true,
+                    "key": "Joke Page"
+                }
+            }
+        ]
+    ],
+    "Joke Page": [
+        [
+            {
+                "instanceof": "Text",
+                "attrs": {
+                    "text": "Click \"Next Joke\" to start!",
+                    "font": ["JetBrains Mono", 50],
+                    "justification": "center",
+                    "key": "-JOKE-",
+                    "expand_x": true,
+                    "expand_y": true
+                }
+            }
+        ],
+        [
+            {
+                "instanceof": "Button",
+                "attrs": {
+                    "button_text": "Next Joke",
+                    "size": [15, 2],
+                    "expand_x": true,
+                    "font": ["JetBrains Mono", 30]
+                }
+            },
+            {
+                "instanceof": "Button",
+                "attrs": {
+                    "button_text": "Quit",
+                    "size": [15, 2],
+                    "font": ["JetBrains Mono", 30]
+                }
+            }
+        ]
+    ]
+}
+    
